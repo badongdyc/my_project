@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../suifile/dist/css/sm.min.css">
+    <link rel="stylesheet" href="../suifile/dist/css/sm-extend.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <script type="text/javascript" src="../suifile/dist/js/zepto.js"></script>
+    <script type="text/javascript" src="../suifile/dist/js/sm.js"></script>
+    <script type="text/javascript" src="../suifile/dist/js/sm-extend.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/handlebars-v4.0.5.js"></script>
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current" id='askinfo'>
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <a href="../index.html" class="icon icon-left pull-left" data-no-cache="true"></a>
+                <h1 class="title">问题详情</h1>
+            </header>
+
+            <!-- 工具栏 -->
+            <nav class="bar bar-tab">
+                <a href="../index.html" class="tab-item external">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+            
+                <a class="tab-item  addAnswerbtn" data-popup="#pubans">
+                    <span class="icon icon-edit"></span>
+                    <span class="tab-label ">添加回答</span>
+                </a>
+            </nav>
+
+            <!-- 这里是页面内容区 -->
+
+            <div class="content askinfo_list">
+                <!-- <div class="row rowpad askinfomar">
+                    <h3 class="">标题</h3>
+                    <div class="row tag askinfotag">
+                        <div class="">html</div>
+                        <div class="">css</div>
+                        <div class="">js</div>
+                       
+                    </div>
+                </div>             
+                <hr/>
+                <div class="list-block media-list listmar">
+                    <ul class="">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-subtitle">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+                                    <div class="row rowpad rowmar">
+                                        <div class="pull-right">
+                                            <span class="user">dyc</span>发布于
+                                            <span>sds</span>
+                                        </div>
+                                         <div class="row rowpad">
+                                            <div class="pull-left ">
+                                                <span class="icon icon-caret iconzan"></span><span class="zannum">0</span>&nbsp;&nbsp;
+                                                <span class="icon icon-caret"></span><span class="cainum">0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h4><span class="ansnum askinfomar">1</span>个回答</h4>
+            
+                <hr/>
+                <div class="list-block media-list listmar">
+                    <ul class="anslist">
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-subtitle">内容</div>
+                            <div class="row rowpad rowmar">                      
+                                <div class="pull-right">
+                                    <span class="user">dyc</span>发布于
+                                    <span>sds</span>
+                                </div>
+                                <div class="row rowpad">
+                                    <div class="pull-left ">
+                                        <span class="icon icon-caret iconzan"></span><span class="zannum">0</span>&nbsp;&nbsp;
+                                        <span class="icon icon-caret"></span><span class="cainum">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <div class="popup popup-about" id="pubans">
+            <header class="bar bar-nav">
+                <a class="icon pull-left close-popup">关闭</a>
+                <a class="icon pull-right close-popup addAnswer">提交</a>
+                <h1 class="title">发布回答</h1>
+            </header>
+            <div class="content">
+            <div class="content-padded">
+                <h4>请填写内容</h4>
+                <div class="row rowpad">
+                    <textarea class="asktex anstxt" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            </div>   
+        </div>
+    </div>
+    <div class="tmpbox"></div>
+</body>
+</html>

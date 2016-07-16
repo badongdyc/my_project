@@ -1,0 +1,225 @@
+
+/*index.html*/
+.searchbox{
+	display:inline-block;
+	background:none !important;
+	margin-left: 1.4rem !important;
+}
+.pri{
+	margin-top:-7px !important;
+}
+.item-title{
+	color:#366DBD;
+}
+.askinfo{
+	width: 200px;
+	height:65px;
+	position: relative;
+}
+.askinfo div{
+	height: 100%
+}
+.askinfo .row{
+	text-align: center;
+	font-size: 12px; 
+	height: 50%;
+	word-wrap: break-word;
+}
+.item-title-row{
+	padding-left: 15px
+}
+.userbox div{
+	text-align: center;
+}
+.userbox .icon-me{
+    font-size:30px;
+}
+.item-inner div{
+	font-size:14px;
+	white-space:normal !important; 
+}
+.tag{
+	font-size: 14px;
+	bottom:0;
+	width:50%;
+	margin-left:15px;
+}
+
+.askinfotag{
+	margin-left:0;
+}
+.tag div{
+	text-align: center;
+	background:#b5ddf5;
+	display:inline-block;
+	padding: 0px 10px;
+}
+.asktitle{
+	color:#2D8FC4 !important;
+}
+.ask{
+	background:none !important;
+}
+.ask li{
+	background: #FFF !important;
+	margin-top: 10px ;
+}
+.asklist{
+	position:initial;
+	margin:0;
+	margin-left: 15px;
+}
+.panel-theme{
+	background: #e8e8e8;
+    color: #847f7f;
+}
+.logoutbox{
+	margin-left: 3.5rem !important;
+}
+.loginbox{
+	margin-left: 1.8rem !important;
+}
+.logout,.login{
+	display:none;
+}
+/*askinfo.html*/
+.askinfo_box{
+	
+}
+#askinfo hr{
+	border-color: rgba(247, 244, 244, 0.22);
+}
+.rowpad{
+	margin-left:0px; 
+}
+.rowmar{
+	margin-top:10px;
+}
+.iconzan{
+	transform:rotate(180deg);
+}
+.zannum,.cainum{
+	font-size:14px;
+}
+.mar{
+	margin:0;
+}
+.asktex{
+	width:99%;
+	margin-left:3px; 
+	margin-top:10px;
+	padding:10px;
+	resize:none;
+}
+.asktag{
+	font-size: 14px;
+}
+.listmar{
+	margin:0.2rem 0;
+}
+.askinfomar{
+	margin-left:17px;
+}
+
+.anslist{
+	background: #efeff4 !important;
+}
+.anslist li{
+	background: #FFF !important;
+	margin-top: 10px ;
+}
+.askinfo_list .item-subtitle,.anslist .item-subtitle{
+	margin-top: 15px;
+}
+/*my_ask_ans.html*/
+#my_ask_ans .content-block{
+	padding:0;
+	margin-top: -25px;
+}
+#askn ul,#ansn ul{
+	background: #efeff4 !important;
+}
+#askn li,#ansn li{
+	background: #FFF !important;
+	margin-top: 10px ;
+}
+.votebox{
+	background: rgba(8, 148, 236, 0.5);
+    color: white;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+/*home_page.html*/
+.myasnum{
+	width:100%;
+	height:28px;
+	line-height: 28px;
+}
+.myasnum .item-input{
+	margin-top: 0;
+}
+.homepage_tag{
+	font-size: 14px;
+	bottom:0;
+	width:100%;
+}
+.homepage_tag div{
+	text-align: center;
+	background:#b5ddf5;
+	display:inline-block;
+	padding: 0px 10px;
+	margin-top: 5px;
+}
+#my_resume{
+	background:#F7F7F8;
+}
+/*all_tag.html*/
+.tagbox ul{
+	background: #efeff4 !important;
+}
+.tagbox li{
+	background: #FFF !important;
+}
+.tagbox .card-footer{
+	justify-content:initial;
+}
+.taginfo{
+	background: rgba(232, 232, 232, 0.52);
+	display:none;
+	opacity: 0;
+	animation: show 0.5s forwards;
+
+}
+@keyframes show{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.taglist{
+	width:54%;
+	height: 28px;
+	line-height: 28px;
+}
+.tagbox{
+	margin-top:10px;
+}
+.anum{
+	margin-left: 29px;
+    font-size: 14px;
+    font-family: '黑体';
+}
+.word{
+	font-size: 14px;
+    font-family: '黑体';
+}
+/*login.html*/
+#login_page .list-block,#reg_page .list-block{
+	margin:0;
+}
+.logbox{
+	padding:0;
+	margin:10px 0;
+}

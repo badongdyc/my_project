@@ -1,0 +1,45 @@
+[ 2016-06-09T18:19:34+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/queryAnsByUser
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `t_user` WHERE ( uid=2 ) 
+
+[ 2016-06-09T18:36:41+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/queryupdateAns
+ERR: 非法操作:queryupdateAns
+
+[ 2016-06-09T18:37:00+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/updateAns
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 and id=2 )' at line 1
+ [ SQL语句 ] : UPDATE `t_answer` SET  WHERE ( uid=1 and id=2 )
+
+[ 2016-06-09T18:37:14+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/updateAns
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( uid=1 and id=2 )' at line 1
+ [ SQL语句 ] : UPDATE `t_answer` SET  WHERE ( uid=1 and id=2 )
+
+[ 2016-06-09T19:31:23+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/updateAnsZan
+ERR: Think\Model:updateZanAnswer方法不存在！
+
+[ 2016-06-09T19:35:36+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/updateAnsZan
+ERR: 非法数据对象！
+
+[ 2016-06-09T19:40:29+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/updateAnsZan
+ERR: Think\Model:canAnswer方法不存在！
+
+[ 2016-06-09T19:41:04+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/updateAnsZan
+ERR: Think\Model:updateCanAnswer方法不存在！
+
+[ 2016-06-09T19:41:20+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/updateAnsZan
+ERR: 1054:Unknown column 'can' in 'field list'
+ [ SQL语句 ] : UPDATE `t_answer` SET `can`=can+1 WHERE ( id=1 )
+
+[ 2016-06-09T21:56:55+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/queryAns
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from t_userinfo where uid =
+
+[ 2016-06-09T21:57:00+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/queryAns
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from t_userinfo where uid =
+
+[ 2016-06-09T22:00:58+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/queryAns
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-09T22:00:59+08:00 ] ::1 /Works/knowhow/index.php/Home/Test/queryAns
+ERR: Think\Model:relation方法不存在！
+

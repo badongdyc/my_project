@@ -1,0 +1,29 @@
+<script id='all_tag_tmp' type="text/x-handlebars-template">
+	{{#each this}}
+		<li>
+	        <div class="item-content">
+	         	<div class="item-inner">
+					<div class="tag">
+	                	<div class="">{{this.tagname}}</div> 
+	                </div>
+	                <a href="tag_ask.html" class="taglist" data-tagid={{this.id}} title={{this.tagname}}>
+						<div>{{this.asknum}}</div>
+					</a>
+					<div class="">
+	                	<span class="icon icon-down tagdown"></span> 
+	                </div>
+	          	</div>
+
+	        </div>
+	  		<div class="card taginfo">
+			    <div class="card-content">
+			      	<div class="card-content-inner">{{this.tagdes}}</div>
+			    </div>
+			    <div class="card-footer">
+			    	<span>{{this.askTodayNum}}</span>&nbsp;asked today,
+			    	<span>{{this.askWeekNum}}</span>&nbsp;this week
+			    </div>
+			</div>
+	  	</li>
+  	{{/each}} 
+</script>

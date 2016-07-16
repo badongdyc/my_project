@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>index</title>
+	<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../suifile/dist/css/sm.min.css">
+	<link rel="stylesheet" href="../suifile/dist/css/sm-extend.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <script type="text/javascript" src="../suifile/dist/js/zepto.js"></script>
+    <script type="text/javascript" src="../suifile/dist/js/sm.js"></script>
+    <script type="text/javascript" src="../suifile/dist/js/sm-extend.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/handlebars-v4.0.5.js"></script>
+</head>
+<body>
+    <div class="page-group">
+        <!-- 单个page ,第一个.page默认被展示-->
+        <!-- 主页 -->
+        <div class="page page-current" id="home_page">
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left back homeback"></a>             
+                <a href="javascript:;" class="icon icon-edit pull-right open-popup open-about edit_userinfo_btn" data-popup="#edit_myinfo"></a>
+                <h1 class="title">个人中心</h1>
+            </header>
+
+            <!-- 工具栏 -->
+            <nav class="bar bar-tab">
+                <a href="../index.html" class="tab-item external active">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                 <a class="tab-item alltag" href="../page/all_tag.html" data-no-cache="true">
+                    <span class="iconfont icon-biaoqian"></span>
+                    <span class="tab-label">标签</span>
+                </a>
+                <a class="tab-item" href="#router3">
+                    <span class="icon icon-me"></span>
+                    <span class="tab-label ">我的</span>
+                </a>
+            </nav>
+				
+            <!-- 这里是页面内容区 -->
+
+            <div class="content">
+	         
+			    <div class="content-block userbox">
+	            	<div class="row">
+	                	<span class="icon icon-me"></span>
+	            	</div>
+	            	<div class="row">
+	                	<span class="tab-label">详细信息</span>
+	            	</div>
+	            </div>
+	            <div class="list-block">
+	                <ul class="infolist">
+				      
+				    </ul>
+
+	            </div>
+
+            </div>
+        </div>
+
+        
+        <div class="popup popup-about" id="my_resume">
+        	<header class="bar bar-nav">
+            	<a class="icon icon-left pull-left close-popup"></a>  
+			  	<h1 class='title'>我的简介</h1>
+			</header>
+			<div class="content">
+			  	<div class="card">
+				    <div class="card-content">
+				      	<div class="card-content-inner des">这是一</div>
+				    </div>
+			  	</div>
+			</div>
+        </div>
+
+		<!-- 编辑个人信息 -->
+        <div class="popup popup-about" id="edit_myinfo">
+            <header class="bar bar-nav">
+            	<a class="icon icon-left pull-left close-popup"></a>  
+			  	<h1 class='title'>修改个人信息</h1>
+			</header>
+			<div class="content">
+			  <div class="list-block">
+			    <ul>
+			      <!-- Text inputs -->
+				    <li>
+				        <div class="item-content">
+				          <div class="item-media"><i class="iconfont icon-nicheng"></i></div>
+				          <div class="item-inner">
+				            <div class="item-title label">昵称</div>
+				            <div class="item-input">
+				              <input type="text" class="editnick" placeholder="Your name">
+				            </div>
+				          </div>
+				        </div>
+				    </li>
+			        
+			        <li>
+				        <div class="item-content">
+				          <div class="item-media"><i class="iconfont">&#xe617;</i></div>
+				          <div class="item-inner">
+				            <div class="item-title label">地址</div>
+				            <div class="item-input">
+				              <input type="text" class="editlocation" placeholder="Your name">
+				            </div>
+				          </div>
+				        </div>
+				    </li>
+
+	                <li>
+				        <div class="item-content">
+				          <div class="item-media"><i class="iconfont icon-gerenzhuye"></i></div>
+				          <div class="item-inner">
+				            <div class="item-title label">主页</div>
+				            <div class="item-input">
+				              <input type="text" class="editweb" placeholder="Your name">
+				            </div>
+				          </div>
+				        </div>
+				    </li>
+			        
+			        <li>
+				        <div class="item-content">
+				          <div class="item-media"><i class="iconfont">&#xe617;</i></div>
+				          <div class="item-inner">
+				            <div class="item-title label">生日</div>
+				            <div class="item-input">
+				              <input type="date" class="birthday" data-toggle='date'>
+
+				            </div>
+				          </div>
+				        </div>
+				    </li>
+			      <li class="align-top">
+			        <div class="item-content">
+			          <div class="item-media"><i class="iconfont icon-jianjie"></i></div>
+			          <div class="item-inner">
+			            <div class="item-title label">个人简介</div>
+			            <div class="item-input">
+			              <textarea class="editdes"></textarea>
+			            </div>
+			          </div>
+			        </div>
+			      </li>
+			    </ul>
+			  </div>
+			  <div class="content-block">
+			    <div class="row">
+			      	<div class="col-50"><a href="#" class="button button-danger close-popup">取消</a></div>
+					<div class="col-50"><a href="#" class="button eidtinfobtn" >提交</a></div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

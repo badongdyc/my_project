@@ -1,0 +1,133 @@
+<script id="home_page_tmp" type="text/x-handlebars-template">
+{{#each this}}
+	<li>
+        <div class="item-content">
+          	<div class="item-media"><i class="iconfont icon-nicheng"></i></div>
+          	<div class="item-inner">
+	            <div class="item-title label">昵称</div>
+	            <div class="item-input nickname">
+	            	{{this.Userinfo.name}}
+	            </div>
+          	</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="item-content">
+          	<div class="item-media"><i class="icon icon-download"></i></div>
+          	<div class="item-inner">
+	            <div class="item-title label">声望</div>
+	            <div class="item-input">
+	              	{{this.Userinfo.reputation}}
+	            </div>
+          	</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="item-content">
+          	<div class="item-media"><i class="iconfont icon-gerenzhuye"></i></div>
+          	<div class="item-inner">
+            	<div class="item-title label">主页</div>
+	            <div class="item-input">
+	              <a href="{{this.Userinfo.website}}" class="after_web">{{this.Userinfo.website}}</a>
+	            </div>
+          	</div>
+        </div>
+    </li>
+        
+    <li>
+        <div class="item-content">
+          	<div class="item-media"><i class="iconfont">&#xe617;</i></div>
+          	<div class="item-inner">
+	            <div class="item-title label">地址</div>
+	            <div class="item-input after_location">
+	                {{this.Userinfo.location}}
+	            </div>
+          	</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="item-content">
+          	<div class="item-media"><i class="iconfont icon-jianjie"></i></div>
+          	<div class="item-inner">
+	            <div class="item-title label">简介</div>
+	            <div class="item-input">
+	              <a href="#" class="open-popup open-about" data-popup="#my_resume">点击查看简介</a>
+	            </div>
+          	</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="item-content">
+          	<div class="item-media"><i class="icon icon-clock"></i></div>
+          	<div class="item-inner">
+	            <div class="item-title label">注册时间</div>
+	            <div class="item-input">
+	             	 {{this.Userinfo.regdate}}
+	            </div>
+          	</div>
+        </div>
+    </li>
+
+    <li>
+        <div class="item-content">
+          	<div class="item-media"><i class="iconfont icon-shijian"></i></div>
+          	<div class="item-inner">
+	            <div class="item-title label">上次登录时间</div>
+	            <div class="item-input">
+	             	{{this.Userinfo.lastlogintime}}
+	            </div>
+          	</div>
+        </div>
+    </li>
+
+    <li>
+	    <div class="item-content">
+	      	<div class="item-media"><i class="iconfont icon-biaoqian"></i></div>
+	      	<div class="item-inner">
+		        <div class="item-title label">标签</div>
+		        <div class="item-input">
+			        <div class="row homepage_tag">
+			        	{{#each Tag}}
+		               		<div class="">{{this.tagname}}</div> 
+			        	{{/each}}
+		            </div>
+			    </div>
+	     	</div>
+	    </div>
+    </li>
+
+
+    <li>
+        <div class="item-content">
+          	<div class="item-media"><i class="iconfont icon-huidashu"></i></div>
+          	<div class="item-inner">
+	            <div class="item-title label">提问</div>
+	            <a href="my_ask_ans.html" class="myasnum">
+		            <div class="item-input">
+		            	{{this.asknum}}
+		            </div>
+	            </a>
+          	</div>
+        </div>
+    </li>
+
+
+    <li>
+        <div class="item-content">
+          	<div class="item-media"><i class="iconfont icon-wenda1"></i></div>
+          	<div class="item-inner">
+	            <div class="item-title label">回答</div>
+	            <a href="my_ask_ans.html" class="myasnum">
+		            <div class="item-input">
+		            	{{this.ansnum}}
+		            </div>
+	            </a>
+          	</div>
+        </div>
+    </li>
+{{/each}}
+</script>

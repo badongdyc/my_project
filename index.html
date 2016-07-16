@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>index</title>
+	<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="suifile/dist/css/sm.min.css">
+	<link rel="stylesheet" href="suifile/dist/css/sm-extend.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script type="text/javascript" src="suifile/dist/js/zepto.js"></script>
+    <script type="text/javascript" src="suifile/dist/js/sm.js"></script>
+    <script type="text/javascript" src="suifile/dist/js/sm-extend.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+</head>
+<body>
+
+    <div class="page-group">
+        <!-- 单个page ,第一个.page默认被展示-->
+        <!-- 主页 -->
+        <div class="page page-current" id='router'>
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <a href="#" class="icon icon-edit pull-left addaskbtn " data-popup="#pubask"></a>
+                <a class="icon icon-menu pull-right open-panel" data-panel='#panel-right-demo'></a>             
+                <h1 class="title">首页</h1>
+            </header>
+
+            <!-- 工具栏 -->
+            <nav class="bar bar-tab">
+                <a class="tab-item external active" href="#router">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                <a class="tab-item external reload" href="#">
+                    <span class="icon icon-refresh"></span>
+                    <span class="tab-label">刷新</span>
+                </a>
+                <a class="tab-item alltag" href="page/all_tag.html" data-no-cache="true">
+                    <span class="iconfont icon-biaoqian"></span>
+                    <span class="tab-label">标签</span>
+                </a>
+                <a class="tab-item" href="page/message.html">
+                    <span class="icon icon-me"></span>
+                    <span class="tab-label ">消息</span>
+                    <span class="badge">2</span>
+                </a>
+            </nav>
+				
+            <!-- 这里是页面内容区 -->
+
+            
+            <div class="content pull-to-refresh-content">
+	            <div class="pull-to-refresh-layer">
+				    <div class="preloader"></div>
+				    <div class="pull-to-refresh-arrow"></div>
+				</div>
+	            <div class="content-padded">
+				  	<div class="searchbar row">
+					    <div class="search-input col-85">
+					      	<input type="search" id='search' placeholder='输入关键字...'/>
+					    </div>
+					    <a class="button button-fill button-primary col-15"><span class="icon icon-search"></span></a>
+				  	</div>
+				</div>
+                <div class="content-block-title asklist">
+					问题列表
+					<a href="#" class="new">最新</a>
+					<a href="#" class="hot">最热</a>
+                </div>
+			  	<div class="list-block media-list">
+				    <ul class="ask">
+				        <li class="askitem">
+
+					        <a href="page/askinfo.html" class="item-link item-content">
+					        <!-- <a href="">dyc</a>发布于 -->
+					            <div class="row askinfo">
+					               <div class="col-33">
+					               		<div class="row ">
+					               			0
+					               		</div>
+					               		<div class="row">
+					               			投票
+					               		</div>
+					               </div>
+					               <div class="col-33">
+					               	    <div class="row ">
+					               			0
+					               		</div>
+					               		<div class="row">
+					               			回答
+					               		</div>
+					               </div>
+					               <div class="col-33">
+					               		<div class="row ">
+					               			0
+					               		</div>
+					               		<div class="row">
+					               			浏览
+					               		</div>
+					               </div>
+					            </div>
+					            <div class="item-inner">
+						            <div class="row pull-right">
+						              	<span class="user">dyc</span>发布于
+						              	<!-- <a href="">dyc</a>发布于 -->
+						              	<span>sds</span>
+						            </div>
+						            <br>
+						            <div class="item-title-row">
+						              <div class="item-text asktitle">标题标题标题标题标题标题标题标题标题标题标题标题</div>
+						            </div>
+					      
+					            </div>
+
+					        </a>
+                            <div class="row tag">
+                            	<div class="">html</div>
+                            	<div class="">css</div>
+                            	<div class="">js</div>
+                               
+                            </div>
+				        </li>
+				    </ul>
+			  	</div>
+            </div>
+        </div>
+
+        <!--用户侧栏 -->
+        <div class="panel-overlay"></div>
+        <div class="panel panel-right panel-reveal theme-dark" id='panel-right-demo'>
+            <div class="content-block userbox">
+            	<div class="row">
+                	<span class="icon icon-me"></span>
+            	</div>
+            	<div class="row">
+                	<span class="tab-label unick">游客</span>
+            	</div>
+            </div>
+            <div class="list-block">
+                <ul>
+			      	<li>
+				        <div class="item-content">
+				          	<div class="item-media"><i class="iconfont icon-gerenzhuye"></i></div>
+				          	<div class="item-inner">
+					            <div class="item-input">
+					            	<a class="home_page_btn " href="page/home_page.html" >个人主页</a>
+					            </div>
+				          	</div>
+				        </div>
+			      	</li>
+                   
+                    <li>
+				        <div class="item-content">
+				          	<div class="item-media"><i class="iconfont icon-shoucang"></i></div>
+				          	<div class="item-inner">
+					            
+					            <div class="item-input">
+					            	我的收藏
+					            </div>
+				          	</div>
+				        </div>
+				    </li>
+
+				    <li>
+				        <div class="item-content">
+				          	<div class="item-media"><i class="iconfont icon-guanzhu"></i></div>
+				          	<div class="item-inner">
+				            
+					            <div class="item-input">
+					            	我的关注
+					            </div>
+				         	</div>
+				        </div>
+				    </li>
+            	
+			      <!-- Switch (Checkbox) -->
+			      	<li>
+				        <div class="item-content">
+				         	<div class="item-media"><i class="iconfont icon-yejianmoshi"></i></div>
+				          	<div class="item-inner">
+					            <div class="item-title label">夜间模式</div>
+					            <div class="item-input">
+					              	<label class="label-switch">
+						                <input type="checkbox">
+						                <div class="checkbox dark"></div>
+					              	</label>
+					            </div>
+				          	</div>
+				        </div>
+			      	</li>
+			    </ul>
+			    <div class="row">
+			    	<div class="col-50 logoutbox">
+			    		<p><a href="#" class="logout button button-fill button-danger alert-text">退出登录</a></p>
+			    	</div>
+			    	<div class="col-50 logoutbox">
+			    		<p><a href="page/login.html" class="login button button-fill button-success">登录</a></p>
+			    	</div>
+			    </div>
+                
+            <!-- .... -->
+            </div>
+        </div>
+		
+		<!-- 发布问题 -->
+		<div class="popup popup-about" id="pubask">
+            <header class="bar bar-nav">
+           	 	
+           	 	<a class="icon pull-left close-popup">关闭</a>
+  				<a class="icon pull-right close-popup addbtn">提交</a>
+                <h1 class="title">发布问题</h1>
+            </header>
+		  	<div class="content-padded">
+		    	<p>About</p>
+		    	<h4>请填写问题标题</h4>
+		    	<div class="list-block mar">
+				    <ul>
+				      	<li>
+					        <div class="item-content">
+					          	<div class="item-media"></div>
+					          	<div class="item-inner">
+					            	<div class="item-input">
+					              		<input class="ask_title" type="text" placeholder="请输入标题">
+					            	</div>
+					          	</div>
+					        </div>
+				      	</li>
+				    </ul>
+  				</div>
+  				<h4>请选择标签</h4>
+  				<div class="list-block mar">
+				    <ul>
+				      	<li>
+					        <div class="item-content">
+					          	<div class="item-media"></div>
+					          	<div class="item-inner">
+					            	<div class="item-input">
+					            		<select class="tagbox" name="">
+					            		</select>
+					            	</div>
+					          	</div>
+					        </div>
+				      	</li>
+				    </ul>
+  				</div>
+  				<div class="row rowpad">
+  					<textarea class="asktex" name="" id="" cols="30" rows="10"></textarea>
+  				</div>
+		  	</div>
+		</div>
+    </div>
+	<div class="box"></div>
+</body>
+</html>

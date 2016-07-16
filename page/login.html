@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>login</title>
+	<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../suifile/dist/css/sm.min.css">
+	<link rel="stylesheet" href="../suifile/dist/css/sm-extend.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <script type="text/javascript" src="../suifile/dist/js/zepto.js"></script>
+    <script type="text/javascript" src="../suifile/dist/js/sm.js"></script>
+    <script type="text/javascript" src="../suifile/dist/js/sm-extend.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/handlebars-v4.0.5.js"></script>
+</head>
+<body>
+	<div class="page-group">
+		<div class="page" id="logpage">
+			<header class="bar bar-nav">
+				<a class="pull-left icon icon-left back"></a>
+				<h1 class="title">登录&注册</h1>
+			</header>
+			<div class="content">
+
+			    <div class="buttons-tab">
+				    <a href="#login_page" class="tab-link active button">登录</a>
+				    <a href="#reg_page" class="tab-link button">注册</a>
+				</div>
+				<div class="content-block logbox">
+				    <div class="tabs">
+				        <div id="login_page" class="tab active">
+					        <div class="content-block logbox">
+					            <div class="list-block">
+								    <ul>
+								      <!-- Text inputs -->
+									    <li>
+									        <div class="item-content">
+									          <div class="item-media"><i class="iconfont icon-zhanghao"></i></div>
+									          <div class="item-inner">
+									            <div class="item-title label">帐号</div>
+									            <div class="item-input">
+									              <input type="text" class="logusername" placeholder="请填写帐号">
+									            </div>
+									          </div>
+									        </div>
+									    </li>
+
+									    <li>
+									        <div class="item-content">
+									          <div class="item-media"><i class="iconfont icon-mima"></i></div>
+									          <div class="item-inner">
+									            <div class="item-title label">密码</div>
+									            <div class="item-input">
+									              <input type="password" class="logpass" placeholder="请填写密码" class="">
+									            </div>
+									          </div>
+									        </div>
+									    </li>
+                                        
+                                        
+								    </ul>
+								  </div>
+								  <div class="content-block">
+								    <div class="row">
+								        <div class="col-50"><a href="#" class="button button-danger back">取消</a></div>
+								        <div class="col-50"><a href="javascript:;" class="button loginbtn" data-no-cache="true">登录</a></div>
+								    </div>
+								  </div>
+					        </div>
+				        </div>
+				        <div id="reg_page" class="tab">
+					        <div class="content-block logbox">
+					            <div class="list-block">
+								    <ul>
+								      <!-- Text inputs -->
+								      	<li>
+									        <div class="item-content">
+									          	<div class="item-media"><i class="iconfont icon-nicheng"></i></div>
+										        <div class="item-inner">
+										            <div class="item-title label">昵称</div>
+										            <div class="item-input">
+										              	<input type="text" class="regnickname" placeholder="请填写昵称">
+										            </div>
+									          	</div>
+									        </div>
+								     	</li>
+									    <li>
+									        <div class="item-content">
+									          <div class="item-media"><i class="iconfont icon-zhanghao"></i></div>
+									          <div class="item-inner">
+									            <div class="item-title label">帐号</div>
+									            <div class="item-input">
+									              <input type="text" class="regusername" placeholder="请填写帐号">
+									            </div>
+									          </div>
+									        </div>
+									    </li>
+
+									    <li>
+									        <div class="item-content">
+									          <div class="item-media"><i class="iconfont icon-mima"></i></div>
+									          <div class="item-inner">
+									            <div class="item-title label">密码</div>
+									            <div class="item-input">
+									              <input type="password" class="regpass" placeholder="请填写密码" class="">
+									            </div>
+									          </div>
+									        </div>
+									    </li>
+									    <li>
+									        <div class="item-content">
+									          <div class="item-media"><i class="iconfont icon-mima"></i></div>
+									          <div class="item-inner">
+									            <div class="item-title label">确认密码</div>
+									            <div class="item-input">
+									              <input type="password" class="regrepass" placeholder="请确认密码" class="">
+									            </div>
+									          </div>
+									        </div>
+									    </li>
+
+								    </ul>
+								  </div>
+								  <div class="content-block">
+								    <div class="row">
+								        <div class="col-50"><a href="javascript:;" class="button  button-danger back">取消</a></div>
+								        <div class="col-50"><a href="javascript:;" class="button regbtn external">注册</a></div>
+								    </div>
+								  </div>
+					        </div>
+				        </div>
+				      
+				    </div>
+				</div>
+			  	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

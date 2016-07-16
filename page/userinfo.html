@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>userinfo</title>
+	<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../suifile/dist/css/sm.min.css">
+	<link rel="stylesheet" href="../suifile/dist/css/sm-extend.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <script type="text/javascript" src="../suifile/dist/js/zepto.js"></script>
+    <script type="text/javascript" src="../suifile/dist/js/sm.js"></script>
+    <script type="text/javascript" src="../suifile/dist/js/sm-extend.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/handlebars-v4.0.5.js"></script>
+</head>
+<body>
+	<div class="page-group">
+		<div class="page">
+			<header class="bar bar-nav">
+				<a class="pull-left icon icon-left back"></a>
+				<h1 class="title">完善个人资料</h1>
+			</header>
+			<div class="content">
+			  	<div class="list-block">
+			    <ul>
+			      <!-- Text inputs -->
+			      	
+
+			      	<li>
+				        <div class="item-content">
+				          	<div class="item-media"><i class="iconfont icon-gerenzhuye"></i></div>
+				          	<div class="item-inner">
+				            <div class="item-title label">主页</div>
+					            <div class="item-input">
+					            	<input type="text" placeholder="请填写主页" class="com_web">
+					            </div>
+				          	</div>
+				        </div>
+			      	</li>		
+
+			        <li>
+				        <div class="item-content">
+				          	<div class="item-media"><i class="iconfont">&#xe617;</i></div>
+				          	<div class="item-inner">
+				            <div class="item-title label">地址</div>
+					            <div class="item-input">
+					              <input type="text" placeholder="请填写地址" class="com_location">
+					            </div>
+				          	</div>
+				        </div>
+			        </li>
+                    
+                    <li>
+				        <div class="item-content">
+				          	<div class="item-media"><i class="iconfont">&#xe621;</i></div>
+				          	<div class="item-inner">
+				            <div class="item-title label">出生日期</div>
+					            <div class="item-input">
+					              	<input type="date" placeholder="Birth day" value="2014-04-30" class="com_birth">
+					            </div>
+				          	</div>
+				        </div>
+			        </li>
+
+			        <li class="align-top">
+				        <div class="item-content">
+				            <div class="item-media"><i class="iconfont">&#xe614;</i></div>
+				            <div class="item-inner">
+					        <div class="item-title label">简介</div>
+					            <div class="item-input">
+					              <textarea placeholder="请填写简介" class="com_des"></textarea>
+					            </div>
+				            </div>
+				        </div>
+				     </li>
+			    </ul>
+			  </div>
+			  <div class="content-block">
+			    <div class="row">
+			      <div class="col-50"><a href="../index.html" class="button button-danger external">跳过</a></div>
+			      <div class="col-50"><a href="#" class="button external com_infobtn">提交</a></div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

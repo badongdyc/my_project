@@ -1,0 +1,54 @@
+
+	<script id="asktmp" type="text/x-handlebars-template">
+		{{#each this}}
+			<li class="askitem" data-aid='{{this.id}}'>
+		        <a href="http://localhost/html-js/overflow/www/page/askinfo.html?aid={{this.id}}" class="item-link item-content " data-no-cache="true">
+		        
+		            <div class="row askinfo">
+		               <div class="col-33">
+		               		<div class="row" title="{{this.vote}}">
+		               			{{this.vote}}
+		               		</div>
+		               		<div class="row">
+		               			投票
+		               		</div>
+		               </div>
+		               <div class="col-33">
+		               	    <div class="row ">
+		               			{{this.ansnum}}
+		               		</div>
+		               		<div class="row">
+		               			回答
+		               		</div>
+		               </div>
+		               <div class="col-33">
+		               		<div class="row viewcount">
+		               			{{this.viewcount}}
+		               		</div>
+		               		<div class="row">
+		               			浏览
+		               		</div>
+		               </div>
+		            </div>
+		            <div class="item-inner">
+			            <div class="row rowpad pull-right">
+			              	<span>{{this.userinfo.name}}</span>发布于
+			              	<span>{{this.publishtime}}</span>
+			            </div>
+			            <br>
+			            <div class="item-title-row">
+			              <div class="item-text asktitle">{{this.title}}</div>
+			            </div>
+		      
+		            </div>
+
+		        </a>
+	            <div class="row tag">
+	            	{{#each tag}}
+	            		<div class="">{{this.tagname}}</div>
+	            	{{/each}}
+	               
+	            </div>
+	        </li>
+        {{/each}}
+	</script>

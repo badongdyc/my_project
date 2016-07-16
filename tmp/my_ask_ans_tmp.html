@@ -1,0 +1,43 @@
+<script id="my_ask_ans_tmp" type="text/x-handlebars-template">
+{{#each this}}
+	<div id="askn" class="tab active">	        
+		<div class="list-block media-list">
+		    <ul class="ask">
+		    	{{#each ask}}
+		        <li class="askitem" data-aid="{{this.id}}">
+			        <a href="askinfo.html" class="item-link item-content">
+			            <div class="item-inner">
+			            	<div class="pull-left votebox">{{this.vote}}</div>
+				            <div class="pull-right">{{this.publishtime}}</div>
+				            <br>
+				            <div class="item-text">{{this.title}}</div>
+			            </div>
+			        </a>
+		        </li>
+             	{{/each}}
+		    </ul>
+		</div>
+
+  	</div>
+  	<div id="ansn" class="tab">
+        <div class="content-block">
+			<div class="list-block media-list">
+			    <ul class="ask">
+			    	{{#each Answer}}
+				        <li class="askitem"  data-aid="{{this.askid}}">
+					        <a href="askinfo.html" class="item-link item-content">
+					            <div class="item-inner">
+					            	<div class="pull-left votebox">{{this.vote}}</div>
+						            <div class="pull-right">{{this.publishtime}}</div>
+						            <br>
+						            <div class="item-text">{{this.asktitle}}</div>
+					            </div>
+					        </a>
+				        </li>
+					{{/each}}			       
+			    </ul>
+        	</div>
+        </div>
+  	</div>
+{{/each}}
+</script>

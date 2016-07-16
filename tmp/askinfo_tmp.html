@@ -1,0 +1,71 @@
+
+<script id="askinfotmp" type="text/x-handlebars-template">
+	
+    <div class="row rowpad askinfomar">
+        <h3 class="">{{this.title}}</h3>
+        <div class="row tag askinfotag">
+        	{{#each tags}}
+            	<div class="">{{this.tagname}}</div>             
+        	{{/each}}
+        </div>
+    </div>             
+    <hr/>
+    <div class="list-block media-list listmar">
+        <ul class="askinfo_list">
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+                     	<div class="row rowpad">
+                            <a class="user"  href="../page/home_page.html" title="" data-uid="{{this.uid}}">{{this.name}}</a>&nbsp;发布于
+                            <span>{{this.publishtime}}</span>
+                        </div>
+                        <div class="item-subtitle">{{this.content}}</div>
+                        <div class="row rowpad rowmar">
+                           
+                             <div class="row rowpad">
+                                <div class="pull-left askopt alert-text-title-callback">
+                                    <span class="icon icon-caret iconzan"></span>
+                                    <span class="zannum">{{this.zan}}</span>&nbsp;&nbsp;
+                                    <span class="icon icon-caret"></span>
+                                    <span class="cainum">{{this.cai}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <h4><span class="ansnum askinfomar">{{this.answernum}}</span>个回答</h4>
+
+    <hr/>
+    <div class="list-block media-list listmar">
+        <ul class="anslist">
+        	{{#each answers}}
+        	    <li>
+	                <div class="item-content">
+	                  <div class="item-inner">
+	                    <div class="row rowpad">
+                            <a class="user" href="../page/home_page.html" title="" data-uid="{{this.uid}}">{{this.userinfo.name}}</a>&nbsp;发布于
+                            <span>{{this.publishtime}}</span>
+                        </div>
+	                    <div class="item-subtitle">{{this.content}}</div>
+	                    <div class="row rowpad rowmar">                      
+	                      
+	                        <div class="row rowpad">
+	                            <div class="pull-left ansopt" data-ansid={{this.id}}>
+	                                <span class="icon icon-caret iconzan"></span>
+	                                <span class="ans_zannum">{{this.zan}}</span>&nbsp;&nbsp;
+	                                <span class="icon icon-caret"></span>
+	                                <span class="ans_cainum">{{this.cai}}</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                  </div>
+	                </div>
+	              </li>
+        	{{/each}}
+          
+        </ul>
+    </div>
+</script>

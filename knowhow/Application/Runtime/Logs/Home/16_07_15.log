@@ -1,0 +1,53 @@
+[ 2016-07-15T21:49:55+08:00 ] ::1 /PHP/knowhow/index.php/Home/Tag/showTagByAskNum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_tag` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_ask` [ RunTime:0.0050s ]
+SQL: select tt.id,tt.tagname,tt.tagdes, count(ta.id) as asknum from t_tag as tt left join t_ask_tag as tat on(tt.id=tat.tagid) 
+  				left join t_ask as ta on(tat.askid=ta.id) group by tt.id order by asknum desc,tt.tagname asc limit 0,20 [ RunTime:0.0240s ]
+SQL: SELECT `id` FROM `t_tag` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id FROM t_ask_tag AS a, t_ask AS b WHERE a.askid = b.id AND a. tagid='3' [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\Program\sever\wamp\www\PHP\knowhow\Application\Home\Logic\TagLogic.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\Program\sever\wamp\www\PHP\knowhow\Application\Home\Logic\TagLogic.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\Program\sever\wamp\www\PHP\knowhow\Application\Home\Logic\TagLogic.class.php 第 81 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (2,4,7) and yearweek(now())=yearweek(publishTime) ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (2,4,7) and date_format(now(),'%Y%m%d')=date_format(publishTime,'%Y%m%d') ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `t_tag` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id FROM t_ask_tag AS a, t_ask AS b WHERE a.askid = b.id AND a. tagid='4' [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\Program\sever\wamp\www\PHP\knowhow\Application\Home\Logic\TagLogic.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\Program\sever\wamp\www\PHP\knowhow\Application\Home\Logic\TagLogic.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\Program\sever\wamp\www\PHP\knowhow\Application\Home\Logic\TagLogic.class.php 第 81 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (3,5,6) and yearweek(now())=yearweek(publishTime) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (3,5,6) and date_format(now(),'%Y%m%d')=date_format(publishTime,'%Y%m%d') ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `t_tag` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id FROM t_ask_tag AS a, t_ask AS b WHERE a.askid = b.id AND a. tagid='1' [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\Program\sever\wamp\www\PHP\knowhow\Application\Home\Logic\TagLogic.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\Program\sever\wamp\www\PHP\knowhow\Application\Home\Logic\TagLogic.class.php 第 81 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (1,2) and yearweek(now())=yearweek(publishTime) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (1,2) and date_format(now(),'%Y%m%d')=date_format(publishTime,'%Y%m%d') ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `t_tag` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id FROM t_ask_tag AS a, t_ask AS b WHERE a.askid = b.id AND a. tagid='2' [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' G:\Program\sever\wamp\www\PHP\knowhow\Application\Home\Logic\TagLogic.class.php 第 81 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (1) and yearweek(now())=yearweek(publishTime) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (1) and date_format(now(),'%Y%m%d')=date_format(publishTime,'%Y%m%d') ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `t_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit G:\Program\sever\wamp\www\PHP\knowhow\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id FROM t_ask_tag AS a, t_ask AS b WHERE a.askid = b.id AND a. tagid='5' [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (0) and yearweek(now())=yearweek(publishTime) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_ask` WHERE ( id in (0) and date_format(now(),'%Y%m%d')=date_format(publishTime,'%Y%m%d') ) LIMIT 1   [ RunTime:0.0000s ]
+

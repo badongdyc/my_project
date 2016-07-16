@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title>Insert title here</title>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+</head>
+<body>
+		<input type='button' value="log"/>
+
+	<script type="text/javascript">
+		$(':button').click(function(){
+			$.ajax({
+				type:'post',
+				url:"{:U('Test/Down')}",
+				success:function(data){
+					$('div').text(data).fadeIn().fadeOut()
+				}
+			})
+		})
+	</script>
+</body>
+</html>

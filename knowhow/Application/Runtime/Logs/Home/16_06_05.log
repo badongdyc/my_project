@@ -1,0 +1,60 @@
+[ 2016-06-05T09:36:52+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `t_user` WHERE ( 1=1 AND uid='1' ) 
+
+[ 2016-06-05T09:45:03+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: 1146:Table 'knowhowdb.t_note' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_note`
+
+[ 2016-06-05T09:46:13+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:46:29+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: 1146:Table 'knowhowdb.t_ask_note' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_ask_note`
+
+[ 2016-06-05T09:47:09+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: 1146:Table 'knowhowdb.t_ask_note' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_ask_note`
+
+[ 2016-06-05T09:47:09+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: 1146:Table 'knowhowdb.t_ask_note' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_ask_note`
+
+[ 2016-06-05T09:47:10+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: 1146:Table 'knowhowdb.t_ask_note' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `t_ask_note`
+
+[ 2016-06-05T09:47:33+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:01+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:02+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:02+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:02+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:02+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:02+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:03+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:03+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:03+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-05T09:48:03+08:00 ] ::1 /Works/knowhow/index.php/Home/User/query
+ERR: Think\Model:relation方法不存在！
+
